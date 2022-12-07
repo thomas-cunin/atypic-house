@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+    .con-btn {
+      background-color: #F76820;
+    }
+
+    .active::before {
+      content: '';
+      position: absolute;
+      width: 160px;
+      height: 160px;
+      border-radius: 50%;
+      background: #FAD415;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    .sub-title {
+      border-color: #c4c4c4;
+    }
+
+    .z-color {
+      background-color: #F76820;
+    }
+
+    .bg-color {
+      background-color: #0D7EA5;
+    }
+  </style>
+</head>
+
+<body>
+<!-- header部分 -->
+<div class="header border-b p-4 lg:p-0 flex items-center justify-between lg:justify-start lg:h-20 text-3xl w-full flex sm:px-14 lg:px-0 md:items-center sm:justify-between md:justify-between lg:justify-start">
+  <img src="./imgs/menu-icon.png" class="w-8 h-8 lg:hidden" alt="">
+  <img class="w-24 h-24 lg:w-24 lg:h-24" src="./imgs/logo.png" alt="">
+  <div class="menu h-auto hidden sm:hidden md:hidden lg:flex lg:flex-1">
+    <div class="menu-item relative flex-1 justify-center items-center flex">
+      <a class="z-10 inset-2/4 text-2xl">
+        Nos Hébergements
+      </a>
+    </div>
+    <div class="menu-item relative flex-1 justify-center items-center flex">
+      <a class="z-10 inset-2/4 text-2xl">
+        Destinations
+      </a>
+    </div>
+    <div class="menu-item relative flex-1 justify-center items-center flex">
+      <a class="z-10 inset-2/4 text-2xl">
+        Devenir Hôte
+      </a>
+    </div>
+  </div>
+  <img class="w-8 h-8 lg:hidden" src="./imgs/user-icon.png" alt="">
+  <div class="hidden con-btn px-14 h-full text-white lg:flex justify-center items-center text-2xl text-white">Connexion / Inscription
+  </div>
+</div>
+  <div class="w-full hidden lg:block h-96 bg-gray-300 mt-24"></div>
+  <p class="w-full px-10 font-extrabold text-xl text-center mt-3 lg:text-4xl lg:mt-12 lg:mb-12">
+    Devenir hôte AtypikHouse !
+  </p>
+  <p class="w-full px-4 text-xs text-center mt-3 lg:text-2xl lg:px-20">
+    Vous possédez un bien d'exception, un vrai hébergement atypique, il ne vous reste plus qu'à le partager aux
+    aventuriers du week-end, aux familles ainsi qu'aux amoureux de l'insolite.
+  </p>
+  <p class="w-full px-4 text-xs text-center mt-3 lg:text-2xl lg:mt-14">
+    AtypikHouse vous propose de vous aider pour :
+  </p>
+  <div class="flex flex-wrap px-4">
+    <div class="w-1/2 lg:w-1/4 text-center flex-col flex items-center mt-8 lg:mt-16">
+      <img class="w-14 h-14 lg:w-28 lg:h-28 rounded-full mb-2 lg:mb-8" src="./imgs/logo.png" alt="">
+      <p class="w-4/5 text-xm font-extrabold">Créer votre annonce
+        avec facilité et rapidité</p>
+    </div>
+    <div class="w-1/2 lg:w-1/4 text-center flex-col flex items-center mt-8 lg:mt-16">
+      <img class="w-14 h-14 lg:w-28 lg:h-28 rounded-full mb-2 lg:mb-8" src="./imgs/logo.png" alt="">
+      <p class="w-4/5 text-xm font-extrabold">Trouver vos fururs
+        weekender</p>
+    </div>
+    <div class="w-1/2 lg:w-1/4 text-center flex-col flex items-center mt-8 lg:mt-16">
+      <img class="w-14 h-14 lg:w-28 lg:h-28 rounded-full mb-2 lg:mb-8" src="./imgs/logo.png" alt="">
+      <p class="w-4/5 text-xm font-extrabold">Gérer vos réservations
+        via AtypikHouse</p>
+    </div>
+    <div class="w-1/2 lg:w-1/4 text-center flex-col flex items-center mt-8 lg:mt-16">
+      <img class="w-14 h-14 lg:w-28 lg:h-28 rounded-full mb-2 lg:mb-8" src="./imgs/logo.png" alt="">
+      <p class="w-4/5 text-xm font-extrabold">Soyez libre </p>
+    </div>
+  </div>
+  <p class="w-full px-4 text-sm text-center mt-6 mb-10 lg:text-xl lg:mt-12 lg:mb-14">
+    AtypikHouse s’engage à prendra qu’une commision de 6%.
+  </p>
+  <div class="p-5 bg-color lg:text-white lg:px-20">
+    <p class="w-full font-extrabold text-sm text-center mb-6 lg:text-2xl">
+      Faire sa demande de publication
+    </p>
+    <p class="w-full text-xs mb-3 lg:mb-8 lg:text-base">
+      Rien de plus simple, pour poster votre annonce d’hébergment atypique, <br />
+      il vous suffit :
+    </p>
+    <p class="w-full text-xs mb-3 lg:mb-8 lg:text-base">
+      1.Vous créez un compte AtypikHouse ou de vous connecter.<br />
+      2.Remplir le formulaire suivant qui va générer votre futur annonce.
+    </p>
+    <p class="w-full text-xs lg:text-base">
+      Une fois qu’AtypikHouse accepte votre demande de publication, il vous suffit de vous connectez pour avoir accès à
+      votre annonce ainsi qu’à votre tableau de bord !
+    </p>
+  </div>
+  <p class="w-full px-4 font-extrabold text-base text-center mb-8 mt-16 lg:text-2xl">
+    Présentez-nous votre hébergements insolite
+  </p>
+  <div class="px-8 lg:px-28 lg:flex lg:w-full">
+    <div class="lg:w-1/2 lg:mr-20 box-border">
+      <p class="text-xs mb-2">
+        Quels est le type de votre hébergements
+        (cabane dans les arbres, bulles en pleine air, maison troglodyte...) :
+      </p>
+      <input class="w-full h-8 rounded-3xl bg-gray-300 mb-8"></input>
+      <p class="text-xs mb-2 lg:hidden">
+        Description de votre hébergement atypique :
+      </p>
+      <textarea class="w-full h-40 rounded-3xl bg-gray-300 mb-8 lg:hidden"></textarea>
+      <p class="text-xs mb-2">
+        Ajoutez ici les photos de votre biens d’exception :
+      </p>
+      <textarea class="w-full h-40 rounded-3xl bg-gray-300 mb-8"></textarea>
+      <p class="text-xs mb-2">
+        Votre hébegerment peut accueillir combien de personne au maximum :
+      </p>
+      <input class="h-8 lg:w-1/5 rounded-3xl bg-gray-300 mb-8"></input>
+      <p class="text-xs mb-2">
+        Votre hébegerment se situe :
+      </p>
+      <input class="w-full h-8 rounded-3xl bg-gray-300 mb-8"></input>
+      <p class="hidden lg:block text-xs mb-2">
+        Ville :
+      </p>
+      <input class="hidden lg:block h-8 lg:w-2/5 rounded-3xl bg-gray-300 mb-8"></input>
+      <div class="border-b border-gray-300 mb-6 pb-2">
+        <div class="flex items-center">
+          <p class="text-xl mb-6 font-extrabold lg:w-28">Chambre</p>
+          <div class="hidden lg:block w-28 ml-5 h-4 rounded-xl bg-gray-300 mb-5"></div>
+        </div>
+        <div class="w-full lg:hidden">
+          <div class="w-5/12 inline-block mr-4">
+            <div class="text-xs mb-3">Nombre de lit simple</div>
+            <input class="h-4 rounded-xl bg-gray-300 mb-5 w-28"/>
+            <div class="flex items-center">
+              <input class="ml-4 mr-2 bg-gray-300" type="checkbox" name="" id="">
+              <div class="text-xs">Literie</div>
+            </div>
+          </div>
+          <div class="w-5/12 inline-block">
+            <div class="text-xs mb-3">Nombre de lit double</div>
+            <input class="h-4 rounded-xl bg-gray-300 mb-5 w-28"/>
+            <div class="flex items-center">
+              <input class="ml-4 mr-2 bg-gray-300" type="checkbox" name="" id="">
+              <div class="text-xs">Lit pour bébé</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="border-b border-gray-300 mb-6 pb-2">
+        <div class="flex items-center">
+          <p class="text-xl mb-6 font-extrabold lg:w-28">Sanitaire</p>
+          <div class="hidden lg:block w-28 ml-5 h-4 rounded-xl bg-gray-300 mb-5"></div>
+        </div>
+        <div class="w-full lg:hidden">
+          <div class="w-full mr-4 mb-6">
+            <div class="flex items-center">
+              <input class="ml-4 mr-2 bg-gray-300" type="checkbox" name="" id="">
+              <div class="text-xs">Toilette sèche</div>
+            </div>
+          </div>
+          <div class="w-full mb-4">
+            <div class="flex items-center">
+              <input class="ml-4 mr-2 bg-gray-300" type="checkbox" name="" id="">
+              <div class="text-xs">Salle de bain dans la chambre</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="border-b border-gray-300 mb-6 pb-2">
+        <div class="flex items-center">
+          <p class="text-xl mb-6 font-extrabold lg:w-28">Extérieur</p>
+          <div class="hidden lg:block w-28 ml-5 h-4 rounded-xl bg-gray-300 mb-5"></div>
+        </div>
+        <div class="w-full flex-wrap flex lg:hidden">
+          <div class="w-1/2 mb-4">
+            <div class="flex items-center">
+              <input class="ml-4 mr-2 bg-gray-300" type="checkbox" name="" id="">
+              <div class="text-xs">Terasse commune</div>
+            </div>
+          </div>
+          <div class="w-1/2 mb-4">
+            <div class="flex items-center">
+              <input class="ml-4 mr-2 bg-gray-300" type="checkbox" name="" id="">
+              <div class="text-xs">Jardin privatif</div>
+            </div>
+          </div>
+          <div class="w-1/2 mb-4">
+            <div class="flex items-center">
+              <input class="ml-4 mr-2 bg-gray-300" type="checkbox" name="" id="">
+              <div class="text-xs">Terasse privée</div>
+            </div>
+          </div>
+          <div class="w-1/2 mb-4">
+            <div class="flex items-center">
+              <input class="ml-4 mr-2 bg-gray-300" type="checkbox" name="" id="">
+              <div class="text-xs">Piscine</div>
+            </div>
+          </div>
+          <div class="w-1/2 mr-4 mb-6">
+            <div class="flex items-center">
+              <input class="ml-4 mr-2 bg-gray-300" type="checkbox" name="" id="">
+              <div class="text-xs">Extérieur commun</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="border-b border-gray-300 mb-6 pb-2">
+        <div class="flex items-center">
+          <p class="text-xl mb-6 font-extrabold lg:w-28">Confort</p>
+          <div class="hidden lg:block w-28 ml-5 h-4 rounded-xl bg-gray-300 mb-5"></div>
+        </div>
+        <div class="w-full lg:hidden">
+          <div class="w-full mr-4 mb-6">
+            <div class="flex items-center">
+              <input class="ml-4 mr-2 bg-gray-300" type="checkbox" name="" id="">
+              <div class="text-xs">Equipement électrique (bouilloir, machine à café)</div>
+            </div>
+          </div>
+          <div class="w-full mb-4">
+            <div class="flex items-center">
+              <input class="ml-4 mr-2 bg-gray-300" type="checkbox" name="" id="">
+              <div class="text-xs">Climatiseur</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="border-gray-300 mb-6 pb-2">
+        <div class="flex items-center">
+          <p class="text-xl mb-6 font-extrabold lg:w-28">Autres</p>
+          <input class="w-28 ml-5 h-4 rounded-xl bg-gray-300 mb-5"></input>
+        </div>
+      </div>
+    </div>
+    <div class="hidden lg:w-5/12 lg:block">
+      <p class="text-base mb-2">
+        Nom de votre hébergement
+      </p>
+      <input class="w-full h-8 rounded-3xl bg-gray-300 mb-8"></input>
+      <div class="flex">
+        <div class="flex-1 mr-4">
+          <p class="text-base mb-2">
+            Heure d’arrivée ( à partir de )
+          </p>
+          <input class="w-1/2 h-8 rounded-3xl bg-gray-300 mb-8"></input>
+        </div>
+        <div class="flex-1">
+          <p class="text-base mb-2">
+            Heure de départ ( jusqu’à)
+          </p>
+          <input class="w-1/2 h-8 rounded-3xl bg-gray-300 mb-8"></input>
+        </div>
+      </div>
+      <div class="flex items-center">
+        <div class="text-base w-72">Animaux accepter ?</div>
+        <div class="flex items-center">
+          <input class="w-6 h-6 ml-2" type="checkbox" name="" id="">
+          Oui
+          <input class="w-6 h-6 ml-10 lg:ml-20" type="checkbox" name="" id="">
+          Non
+        </div>
+      </div>
+      <div class="flex items-center mt-12">
+        <div class="text-base w-72">Petit déjeuner compris ?</div>
+        <div class="flex items-center">
+          <input class="w-6 h-6 ml-2" type="checkbox" name="" id="">
+          Oui
+          <input class="w-6 h-6 ml-10 lg:ml-20" type="checkbox" name="" id="">
+          Non
+        </div>
+      </div>
+      <div class="flex items-center mt-12">
+        <div class="text-base w-72">Sécurisé pour les enfants en bas-âge ?</div>
+        <div class="flex items-center">
+          <div class="flex items-center">
+            <input class="w-6 h-6 ml-2" type="checkbox" name="" id="">
+            Oui
+            <input class="w-6 h-6 ml-10 lg:ml-20" type="checkbox" name="" id="">
+            Non
+          </div>
+        </div>
+      </div>
+      <p class="text-base mb-2 mt-12">
+        Description de votre hébergement atypique :
+      </p>
+      <textarea class="w-full h-96 rounded-3xl bg-gray-300 mb-8"></textarea>
+      <p class="text-base mb-4 mt-4">
+        Prix d’une nuit 
+      </p>
+      <input class="mx-auto w-32 h-8 rounded-3xl bg-gray-300 mb-8"></input>
+    </div>
+  </div>
+  <div
+    class="w-60 p-2 lg:w-80 lg:text-xl font-bold text-center mx-auto mb-8 lg:p-5 rounded-xl bg-gray-300 mt-12 mx-auto ">
+    Envoyer ma demande
+    de publication
+  </div>
+</body>
+
+</html>
