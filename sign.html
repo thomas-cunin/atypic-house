@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+    .con-btn {
+      background-color: #F76820;
+    }
+
+    .active::before {
+      content: '';
+      position: absolute;
+      width: 160px;
+      height: 160px;
+      border-radius: 50%;
+      background: #FAD415;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    .sub-title {
+      border-color: #c4c4c4;
+    }
+
+    .z-color {
+      background-color: #F76820;
+    }
+
+    .bg-color {
+      background-color: #0D7EA5;
+    }
+  </style>
+</head>
+<script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js">
+</script>
+<body>
+<!-- header部分 -->
+<div class="header border-b p-4 lg:p-0 flex items-center justify-between lg:justify-start lg:h-20 text-3xl w-full flex sm:px-14 lg:px-0 md:items-center sm:justify-between md:justify-between lg:justify-start">
+  <img src="./imgs/menu-icon.png" class="w-8 h-8 lg:hidden" alt="">
+  <img class="w-24 h-24 lg:w-24 lg:h-24" src="./imgs/logo.png" alt="">
+  <div class="menu h-auto hidden sm:hidden md:hidden lg:flex lg:flex-1">
+    <div class="menu-item relative flex-1 justify-center items-center flex">
+      <a class="z-10 inset-2/4 text-2xl">
+        Nos Hébergements
+      </a>
+    </div>
+    <div class="menu-item relative flex-1 justify-center items-center flex">
+      <a class="z-10 inset-2/4 text-2xl">
+        Destinations
+      </a>
+    </div>
+    <div class="menu-item relative flex-1 justify-center items-center flex">
+      <a class="z-10 inset-2/4 text-2xl">
+        Devenir Hôte
+      </a>
+    </div>
+  </div>
+  <img class="w-8 h-8 lg:hidden" src="./imgs/user-icon.png" alt="">
+  <div class="hidden con-btn px-14 h-full lg:flex justify-center items-center text-2xl text-white">Connexion / Inscription
+  </div>
+</div>
+  <!-- title -->
+  <div class="lg:mx-auto mt-8 lg:mt-32 lg:mr-8 flex justify-center box-border w-full pb-28">
+    <div class="mx-5 rounded-2xl w-full bg-color p-5 lg:p-0 sm:w-4/6 lg:w-4/5 sm:px-10 lg:mx-auto">
+      <div class="lg:hidden flex w-full">
+        <div class="flex-1 text-center text-xs tab text-white">CONNEXION</div>
+        <div class="h-6 w-0.5 rounded-2xl bg-white"></div>
+        <div class="flex-1 text-center text-lg tab text-white">INSCRIPTION</div>
+      </div>
+      <div class="mx-auto flex justify-center w-full relative">
+        <div class="form1 hidden lg:block lg:w-1/2 lg:pl-10 lg:pr-20 border-box">
+          <div class="hidden font-extrabold mb-10 pt-6 text-white text-2xl text-center lg:block">Connexion</div>
+          <div class="text-center text-sm lg:text-xm mt-3 lg:mt-10 mb-1 lg:mb-4 text-white lg:text-left">Votre mail</div>
+          <input class="w-full h-5 lg:h-10 mx-auto rounded-full"></input>
+          <div class="text-center text-sm  mt-3  mb-1 lg:mb-4 lg:text-xm lg:mt-10 text-white lg:text-left">Votre mot de passe </div>
+          <input class="w-full h-5 lg:h-10 mx-auto rounded-full"></input>
+          <i class="text-center mt-5 block mx-auto text-sm text-white lg:mt-8">Mot de passe oublié ? AtypikHouse va vous aidez cliquez <a href="#">ici</a>
+          </i>
+          <div class="lg:hidden text-center text-sm lg:text-2xl mt-5 text-white"> Vous n’avez pas encore de compte ? </div>
+          <div class="lg:hidden text-center text-sm lg:text-2xl mb-1 underline text-white">Inscrivez-vous ! </div>
+          <div
+            class="hidden lg:flex justify-center items-center w-3/5 h-52 rounded-xl z-color mt-24 md:w-3/5 lg:w-3/4 mx-auto md:h-32 lg:h-20 text-center text-3xl flex items-center justify-center">
+            Se connecter
+          </div>
+        </div>
+        <div class="bg-white hidden lg:block absolute top-2/4 left-2/4 transform -translate-x-2/4 -translate-y-2/4 h-4/5 w-2 rounded-2xl"></div>
+        <div class="form2 lg:w-1/2 lg:pl-10 lg:pr-20">
+          <div class="hidden font-extrabold mb-10 pt-6 text-white text-2xl text-center lg:block">Inscription</div>
+          <div class="text-center text-sm mt-3 mb-1 text-white lg:text-left lg:text-xm lg:mb-4">Votre prénom</div>
+          <input class="w-full h-5 mx-auto rounded-full lg:h-10"></input>
+          <div class="text-center text-sm mt-3 mb-1 text-white lg:text-left lg:text-xm lg:mb-4">Votre mail</div>
+          <input class="w-full h-5 mx-auto rounded-full lg:h-10"></input>
+          <div class="text-center text-sm mt-3 mb-1 text-white lg:text-left lg:text-xm lg:mb-4">Votre mot de passe </div>
+          <input class="w-full h-5 mx-auto rounded-full lg:h-10"></input>
+          <div class="text-center text-sm mt-3 mb-1 text-white lg:text-left lg:text-xm lg:mb-4">Confirmation du mot de passe </div>
+          <input class="w-full h-5 mx-auto rounded-full lg:h-10"></input>
+          <div class="flex w-full break-all mt-3 lg:mt-8">
+            <input class="mr-6 mt-1 lg:ml-8" type="checkbox" name="" id="">
+            <i class="text-xs block flex-1 break-all text-white">J’accepte les termes d’utilisation</i>
+          </div>
+          <div class="flex w-full break-all mt-3 lg:mt-8">
+            <input class="mr-6 mt-1 lg:ml-8" type="checkbox" name="" id="">
+            <i class="text-xs block flex-1 break-all text-white">Je ne souhaite pas être au courant des offres et actualités
+              d’AtypikHouse</i>
+          </div>
+          <div class="lg:hidden text-center text-sm lg:text-2xl mt-5 text-white"> Vous avez un compte ?</div>
+          <div class="lg:hidden text-center text-sm lg:text-2xl mb-1 underline text-white"><a href="#">Connectez-vous !</a></div>
+          <div
+            class="hidden lg:flex justify-center items-center w-3/5 h-52 rounded-xl z-color mt-24 md:w-3/5 lg:w-3/4 mx-auto md:h-32 lg:h-20 text-center text-3xl lg:mb-16">
+            S’inscrire
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+<script>
+  $('.tab').click(function(e) {
+    var width = document.body.clientWidth;
+    console.log(e)
+    $('.tab').removeClass('text-lg')
+    $('.tab').addClass('text-xs')
+    $(this).addClass('flex-1 text-center text-lg')
+    console.log($(this).index())
+    if (width < 900) {
+      if ($(this).index() == 0) {
+        $('.form1').removeClass('hidden');
+        $('.form2').addClass('hidden');
+      }else {
+        $('.form2').removeClass('hidden');
+        $('.form1').addClass('hidden');
+      }
+    }
+  })
+</script>
+</html>
