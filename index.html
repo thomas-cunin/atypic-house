@@ -10,33 +10,108 @@
 <body>
 <!--Add a header with one logo square and 4 links who take every widdth-->
 <!--  Add header, banner, main and footer  -->
-<header class="bg-white">
-    <div class=" py-2 flex flex-row justify-between">
-        <div class="flex justify-center align-center "><div style="width: 128px;height: 128px" class="bg-neutral-400"></div></div>
-        <div class="flex justify-center align-center "><div style="width: 128px;height: 128px" class="bg-neutral-400"></div></div>
-        <div class="flex justify-center align-center "><div style="width: 128px;height: 128px" class="bg-neutral-400"></div></div>
+<!-- header部分 -->
+<div class="header border-b p-4 lg:p-0 flex items-center justify-between lg:justify-start lg:h-20 text-3xl w-full flex sm:px-14 lg:px-0 md:items-center sm:justify-between md:justify-between lg:justify-start">
+    <img src="./imgs/menu-icon.png" class="w-8 h-8 lg:hidden" alt="">
+    <img class="w-24 h-24 lg:w-24 lg:h-24" src="./imgs/logo.png" alt="">
+    <div class="menu h-auto hidden sm:hidden md:hidden lg:flex lg:flex-1">
+        <div class="menu-item relative flex-1 justify-center items-center flex">
+            <a class="z-10 inset-2/4 text-2xl">
+                Nos Hébergements
+            </a>
+        </div>
+        <div class="menu-item relative flex-1 justify-center items-center flex">
+            <a class="z-10 inset-2/4 text-2xl">
+                Destinations
+            </a>
+        </div>
+        <div class="menu-item relative flex-1 justify-center items-center flex">
+            <a class="z-10 inset-2/4 text-2xl">
+                Devenir Hôte
+            </a>
+        </div>
     </div>
-</header>
-<!-- Add a banner-->
-<div class="banner px-16 py-16">
-    <div class="bg-neutral-400 h-full my-auto rounded-lg">
+    <img class="w-8 h-8 lg:hidden" src="./imgs/user-icon.png" alt="">
+    <div class="hidden con-btn px-14 h-full text-white lg:flex justify-center items-center text-2xl">Connexion / Inscription
     </div>
 </div>
-<!-- Add a main content -->
-<main class="px-5 py-5 grid grid-flow-col grid-rows-2 lg:grid-rows-1">
-    <div class="flex flex-col align-center h-full my-auto rounded-lg"><img class="lg:h-64 lb:w-64"  src="https://images.squarespace-cdn.com/content/v1/5dc1a5d44bac502732aac8ca/1619819778092-OSC33IN0T9TEGK0757U2/Screen%2BShot%2B2020-07-07%2Bat%2B4.59.23%2BPM.png?format=1000w" alt=""><span class="text-center lg:h-64 lb:w-64">Lorem ipsum dolor majum erticul.</span></div>
-    <div class="flex flex-col align-center h-full my-auto rounded-lg"><img class="lg:h-64 lb:w-64"  src="https://images.squarespace-cdn.com/content/v1/5dc1a5d44bac502732aac8ca/1619819778092-OSC33IN0T9TEGK0757U2/Screen%2BShot%2B2020-07-07%2Bat%2B4.59.23%2BPM.png?format=1000w" alt=""><span class="text-center lg:h-64 lb:w-64">Lorem ipsum dolor majum erticul.</span></div>
-    <div class="flex flex-col align-center h-full my-auto rounded-lg"><img class="lg:h-64 lb:w-64"  src="https://images.squarespace-cdn.com/content/v1/5dc1a5d44bac502732aac8ca/1619819778092-OSC33IN0T9TEGK0757U2/Screen%2BShot%2B2020-07-07%2Bat%2B4.59.23%2BPM.png?format=1000w" alt=""><span class="text-center lg:h-64 lb:w-64">Lorem ipsum dolor majum erticul.</span></div>
-    <div class="flex flex-col align-center h-full my-auto rounded-lg"><img class="lg:h-64 lb:w-64"  src="https://images.squarespace-cdn.com/content/v1/5dc1a5d44bac502732aac8ca/1619819778092-OSC33IN0T9TEGK0757U2/Screen%2BShot%2B2020-07-07%2Bat%2B4.59.23%2BPM.png?format=1000w" alt=""><span class="text-center lg:h-64 lb:w-64">Lorem ipsum dolor majum erticul.</span></div>
-</main>
-    <!-- Add a footer -->
-<footer class="bg-gray-800">
-    <div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
-        <h1 class="text-3xl font-bold text-white">
-            Footer
-        </h1>
+
+<!-- Add a banner-->
+<div class="banner px-16 py-16">
+    <div class="bg-white h-full my-auto rounded-lg">
+        <div class="grid grid-cols-3 gap-3 p-8">
+            <div class="flex flex-col justify-center align-center">
+                <label for="" class="mb-1">Test label</label>
+                <input class="w-full h-8 md:h-8 lg:h-10 border-black mx-auto rounded-full border-2" type="text">
+            </div>
+            <div class="flex flex-col justify-center align-center">
+                <label for="" class="mb-1">Test label</label>
+                <input class="w-full h-8 md:h-8 lg:h-10 border-black mx-auto rounded-full border-2" type="text">
+            </div>
+            <div class="flex flex-col justify-center align-center">
+                <label for="" class="mb-1">Test label</label>
+                <input class="w-full h-8 md:h-8 lg:h-10 border-black mx-auto rounded-full border-2" type="text">
+            </div>
+            <div class="flex flex-col justify-center align-center">
+                <label for="" class="mb-1">Test label</label>
+                <input class="w-full h-8 md:h-8 lg:h-10 border-black mx-auto rounded-full border-2" type="text">
+            </div>
+            <div class="flex flex-col justify-center align-center">
+                <label for="" class="mb-1">Test label</label>
+                <input class="w-full h-8 md:h-8 lg:h-10 border-black mx-auto rounded-full border-2" type="text">
+            </div>
+            <button class="bg-orange-500 hover:bg-orange-700 text-black font-bold py-2 px-4 rounded">
+                Button
+            </button>
+        </div>
     </div>
-</footer>
+</div>
+<!-- title -->
+<div class="lg:text-4xl font-extrabold text-center lg:mt-20 mt-10 mb-20 text-2xl">AH ! Voici quelques unes de nos sélections</div>
+<!-- Add a main content -->
+<div class="px-5 py-5 grid grid-flow-col grid-rows-2 lg:grid-rows-1">
+
+    <div class=" flex flex-col justify-center align-center h-full my-auto rounded-lg"><div class="circle-image flex flex-col justify-center"><img src="./imgs/circle4.png" alt=""/></div><span class="text-center lg:h-64 lb:w-64">Coups de coeurs du moment</span></div>
+    <div class=" flex flex-col align-center h-full my-auto rounded-lg justify-center"><img class="circle-image" src="./imgs/circle3.png" alt=""><span class="text-center lg:h-64 lb:w-64">Aventurier insolite</span></div>
+    <div class=" flex flex-col align-center h-full my-auto rounded-lg justify-center"><img class="circle-image" src="./imgs/circle2.png" alt=""><span class="text-center lg:h-64 lb:w-64">Famille hors du commun</span></div>
+    <div class="flex flex-col align-center h-full my-auto rounded-lg justify-center"><img class="circle-image"  src="./imgs/circle1.png" alt=""><span class="text-center lg:h-64 lb:w-64">Les amoureux atypiques</span></div>
+</div>
+<!--talwindcss 60 % div and 40 % div-->
+<div>
+    <div class="flex flex-row w-max">
+        <!--  one div with 60% width and another with 40% width-->
+        <div class="w-60 flex flex-col">
+            <div>
+                <img src="./imgs/logo.png" alt="">
+            </div>
+            <div>
+                <p>
+                    Lorem ipsum dolor sit amet ?<br>
+                    Consectetur adipiscing elit , consectetur adipiscing elit.
+                </p>
+            </div>
+        </div>
+        <div class="w-40 flex flex-col">
+            <div>
+                <p>
+                    Lorem ipsum dolor sit amet ?<br>
+                    Consectetur adipiscing elit , consectetur adipiscing elit.
+                </p>
+            </div>
+            <div>
+                <img src="./imgs/logo.png" alt="">
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    <!-- Add a footer -->
+<div class="bg-gray-800">
+    <div class="flex flex-row">
+
+    </div>
+</div>
 
 </body>
 </html>

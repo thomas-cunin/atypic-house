@@ -3,3 +3,19 @@ $color-primary: #F76820;
   height: 256px;
   background-image: url('https://images.adsttc.com/media/images/61ca/2e16/b038/0601/6505/32e8/newsletter/casa-bosque-jardin.jpg');
 }
+
+.circle-image img{
+  //on mobile width 90px height 90px on tablet width 132px height 132px on desktop width 200px height 200px
+width: 90px;
+height: 90px;
+//scss on tablet
+@media (min-width: 768px) {
+  width: 132px;
+  height: 132px;
+}
+//scss on desktop
+@media (min-width: 1024px) {
+  width: 200px;
+  height: 200px;
+}
+}
